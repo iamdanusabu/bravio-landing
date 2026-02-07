@@ -1,0 +1,162 @@
+.hero {
+    padding: 80px 0 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.badgeContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border-radius: 999px;
+    /* Full rounded corners */
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--foreground);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.headline {
+    font-size: 52px;
+    /* Reduced from 60px */
+    line-height: 1.1;
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    letter-spacing: -0.04em;
+}
+
+.subheadline {
+    font-size: 18px;
+    /* Slightly smaller subheadline */
+    color: var(--muted);
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+}
+
+.visualContainer {
+    position: relative;
+    max-width: 1400px;
+    /* Increased from 1000px */
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboardImage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    position: relative;
+}
+
+/* Floating Cards Grid */
+.cardsGrid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.card {
+    position: absolute;
+    background: white;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 200px;
+    animation: float 6s ease-in-out infinite;
+    pointer-events: auto;
+    z-index: 3;
+}
+
+.card:nth-child(1) {
+    top: 10%;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+    top: 20%;
+    right: 0;
+    animation-delay: 1s;
+}
+
+.card:nth-child(3) {
+    bottom: 20%;
+    left: -5%;
+    animation-delay: 2s;
+}
+
+.card:nth-child(4) {
+    bottom: 10%;
+    right: -5%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.cardImage {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.cardContent {
+    text-align: left;
+}
+
+.cardValue {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--foreground);
+}
+
+.cardLabel {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+@media (max-width: 1024px) {
+    .cardsGrid {
+        display: none;
+    }
+
+    .headline {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .visualContainer {
+        margin-top: 40px;
+    }
+}

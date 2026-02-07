@@ -1,27 +1,18 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --background: #F7F5F0;
+  /* Warm beige/cream from reference */
+  --foreground: #101010;
+  /* Near black */
+  --muted: #555555;
+  --accent: #E56B4E;
+  /* Orange/Rust accent */
+  --surface: #FFFFFF;
+  --surface-secondary: #EBEAE6;
+  /* Darker beige for inputs/backgrounds */
+  --radius: 12px;
+  --radius-lg: 20px;
+  --container-width: 1200px;
+  --header-height: 70px;
 }
 
 * {
@@ -30,13 +21,83 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Suisseintl', sans-serif;
+  letter-spacing: -0.02em;
+  /* Tighter tracking as seen in reference */
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Base Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  /* Pill shape */
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--foreground);
+  color: var(--surface);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--surface);
 }

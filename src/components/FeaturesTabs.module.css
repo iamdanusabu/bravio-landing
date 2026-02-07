@@ -1,0 +1,203 @@
+.section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.headline {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto 80px;
+    letter-spacing: -0.02em;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.tab {
+    font-size: 16px;
+    font-weight: 600;
+    color: #999;
+    padding-bottom: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+    flex: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* The line/border */
+.tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    transition: background-color 0.3s;
+}
+
+.activeTab {
+    color: var(--foreground);
+}
+
+.activeTab::after {
+    background-color: var(--foreground);
+    height: 3px;
+}
+
+.tabNumber {
+    font-weight: 700;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.activeTab .tabNumber {
+    color: #ccc;
+}
+
+.contentContainer {
+    background: #E8F0FE;
+    border-radius: 32px;
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    overflow: hidden;
+}
+
+.fullPadding {
+    padding: 0 !important;
+    justify-content: center;
+    /* Center single image if needed */
+    background: transparent;
+    /* Or keep bg if image is transparent? assuming opaque png */
+    background: #E8F0FE;
+    /* Keep bg just in case */
+}
+
+.fullImageContainer {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullWidthImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover or contain? Slider implies cover usually */
+    display: block;
+}
+
+.textContent {
+    max-width: 400px;
+    z-index: 2;
+}
+
+.contentTitle {
+    font-size: 18px;
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.contentHeadline {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Visualization Styles */
+.flowContainer {
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Image Styles */
+.imageContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    max-width: 500px;
+}
+
+.featureImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap;
+        gap: 16px;
+        border-bottom: none;
+    }
+
+    .tab {
+        border-bottom: none;
+        background: #f9f9f9;
+        padding: 12px;
+        border-radius: 8px;
+        justify-content: center;
+    }
+
+    .tab::after {
+        display: none;
+    }
+
+    .activeTab {
+        background: #eee;
+    }
+
+    .contentContainer {
+        flex-direction: column;
+        padding: 40px 24px;
+        gap: 40px;
+    }
+
+    .textContent {
+        text-align: center;
+    }
+
+    .imageContainer {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    /* ensure full width on mobile too */
+    .fullPadding {
+        padding: 0 !important;
+    }
+}
