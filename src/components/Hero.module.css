@@ -126,6 +126,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 0;
+    /* prevents grid blowout */
+    padding-block: 32px;
+    /* room for floating badges top/bottom */
 }
 
 .visualContainer {

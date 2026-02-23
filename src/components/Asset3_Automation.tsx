@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Asset3_Automation() {
     return (
-        <div style={{ position: 'relative', width: '100%', maxWidth: 400, height: 350, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: 520, height: 420, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
             {/* Connecting glow */}
             <div style={{

@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Asset1_AntiBloat() {
     return (
-        <div style={{ position: 'relative', width: '100%', maxWidth: 400, height: 350, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: 520, height: 420, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
             {/* BACKGROUND: Legacy bloat — isolated so blur can't bleed */}
             <div style={{ position: 'absolute', top: 32, left: 16, width: '90%', height: 280, isolation: 'isolate' }}>

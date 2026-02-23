@@ -5,7 +5,7 @@ const bars = [40, 60, 45, 80, 55, 90, 70];
 
 export default function Asset4_Velocity() {
     return (
-        <div style={{ position: 'relative', width: '100%', maxWidth: 400, height: 350, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: 520, height: 420, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
             {/* BASE: Team Dashboard */}
             <div style={{
