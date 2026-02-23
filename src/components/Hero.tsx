@@ -2,12 +2,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Hero.module.css';
+import Asset1_AntiBloat from './Asset1_AntiBloat';
+import Asset2_SpeedCycle from './Asset2_SpeedCycle';
+import Asset3_Automation from './Asset3_Automation';
+import Asset4_Velocity from './Asset4_Velocity';
 
 const heroOptions = [
     {
         badge: "Built for Small Biomedical ISO Teams",
         headline: "FSM for Small Biomedical Service Teams — Not Enterprise Bloat",
-        subheadline: "Close work orders, generate service reports, and send invoices faster. Everything your 5–50 technician team needs — nothing you don’t.",
+        subheadline: "Close work orders, generate service reports, and send invoices faster. Everything your 5–50 technician team needs — nothing you don't.",
         ctaPrimary: "Request a Demo",
         ctaSecondary: "See How It Works"
     },
@@ -34,15 +38,28 @@ const heroOptions = [
     }
 ];
 
+const assets = [
+    Asset1_AntiBloat,
+    Asset2_SpeedCycle,
+    Asset3_Automation,
+    Asset4_Velocity,
+];
+
 export default function Hero() {
     const [index, setIndex] = useState(0);
     const [displayedHeadline, setDisplayedHeadline] = useState("");
+    const [visible, setVisible] = useState(true);
     const currentOption = heroOptions[index];
+    const ActiveAsset = assets[index];
 
-    // Rotation Timer
+    // Rotation Timer — fade out, swap, fade in
     useEffect(() => {
         const timer = setInterval(() => {
-            setIndex((prev) => (prev + 1) % heroOptions.length);
+            setVisible(false);
+            setTimeout(() => {
+                setIndex((prev) => (prev + 1) % heroOptions.length);
+                setVisible(true);
+            }, 400);
         }, 10000);
         return () => clearInterval(timer);
     }, []);
@@ -60,7 +77,7 @@ export default function Hero() {
             } else {
                 clearInterval(typeTimer);
             }
-        }, 40); // Typing speed
+        }, 40);
 
         return () => clearInterval(typeTimer);
     }, [index]);
@@ -68,37 +85,60 @@ export default function Hero() {
     return (
         <section className={styles.hero}>
             <div className="container">
-                <div className={styles.badgeContainer}>
-                    <span className={styles.badge} key={index}>{/* Add key to trigger animation restart if needed */}
-                        {currentOption.badge}
-                    </span>
-                </div>
-                <h1 className={styles.headline}>
-                    {displayedHeadline}<span className={styles.cursor}>|</span>
-                </h1>
+                <div className={styles.inner}>
+                    {/* Left: Text content */}
+                    <div className={styles.leftCol}>
+                        <div className={styles.badgeContainer}>
+                            {/* Clickable badge dots */}
+                            <div className={styles.badgeDots}>
+                                {heroOptions.map((o, i) => (
+                                    <button
+                                        key={i}
+                                        className={`${styles.badgeDot} ${i === index ? styles.badgeDotActive : ''}`}
+                                        onClick={() => {
+                                            setVisible(false);
+                                            setTimeout(() => { setIndex(i); setVisible(true); }, 400);
+                                        }}
+                                        aria-label={o.badge}
+                                    />
+                                ))}
+                            </div>
+                            <span className={styles.badge}>{currentOption.badge}</span>
+                        </div>
 
-                <p className={styles.subheadline} style={{ fontSize: 18, color: 'var(--muted)', maxWidth: 700, margin: '0 auto 40px', lineHeight: 1.5 }}>
-                    {currentOption.subheadline}
-                </p>
+                        <h1 className={styles.headline}>
+                            {displayedHeadline}<span className={styles.cursor}>|</span>
+                        </h1>
 
-                <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 60 }}>
-                    <Link href="https://cal.com/nevolabs-f6qxzs/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{currentOption.ctaPrimary}</Link>
-                    <button className="btn" style={{ border: '1px solid #ddd' }}>{currentOption.ctaSecondary}</button>
-                </div>
+                        <p className={styles.subheadline}>
+                            {currentOption.subheadline}
+                        </p>
 
-                <div className={styles.visualContainer}>
-                    <img
-                        src="/dashboard.png"
-                        alt="Bravio Dashboard"
-                        className={styles.dashboardImage}
-                    />
-                </div>
+                        <div className={styles.ctaRow}>
+                            <Link href="https://cal.com/nevolabs-f6qxzs/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{currentOption.ctaPrimary}</Link>
+                            <button className="btn" style={{ border: '1px solid #ddd' }}>{currentOption.ctaSecondary}</button>
+                        </div>
 
-                <div style={{ marginTop: 60, display: 'flex', justifyContent: 'center', gap: 40, flexWrap: 'wrap', color: 'var(--muted)', fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1 }}>
-                    <span>ISO 13485 Compliant</span>
-                    <span>SOC2 Certified</span>
-                    <span>1.2M+ Assets Managed</span>
-                    <span>2500+ Active Techs</span>
+                        <div className={styles.trustRow}>
+                            <span className={styles.trustItem}>ISO 13485 Compliant</span>
+                            <span className={styles.trustItem}>SOC2 Certified</span>
+                            <span className={styles.trustItem}>1.2M+ Assets Managed</span>
+                        </div>
+                    </div>
+
+                    {/* Right: Animated asset */}
+                    <div className={styles.rightCol}>
+                        <div
+                            className={styles.assetWrapper}
+                            style={{
+                                opacity: visible ? 1 : 0,
+                                transform: visible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.97)',
+                                transition: 'opacity 0.4s ease, transform 0.4s ease',
+                            }}
+                        >
+                            <ActiveAsset />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 .section {
     padding: 100px 0;
-    background-color: #fafafa;
+    background-color: var(--background);
 }
 
 .header {
@@ -9,43 +9,83 @@
     margin: 0 auto 60px;
 }
 
+.overline {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
 .headline {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 16px;
+    letter-spacing: -0.03em;
 }
 
 .subheadline {
-    font-size: 18px;
+    font-size: 17px;
     color: var(--muted);
+    line-height: 1.6;
 }
 
+/* 2-column grid */
 .grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
-    flex-wrap: wrap;
+    max-width: 820px;
+    margin: 0 auto;
 }
 
 .card {
-    background: white;
-    border-radius: 20px;
-    padding: 40px 32px;
-    width: 340px;
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 40px 36px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    position: relative;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
+/* Highlighted popular card */
 .popularCard {
-    border: 2px solid var(--accent);
-    position: relative;
+    background: #0e1e2b;
+    color: white;
+    border: none;
+}
+
+.popularCard .planName {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.popularCard .price {
+    color: white;
+}
+
+.popularCard .pricePeriod {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.popularCard .planDesc {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.popularCard .featureItem {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.popularCard .featureIcon {
+    color: var(--accent);
 }
 
 .popularBadge {
@@ -55,23 +95,30 @@
     transform: translateX(-50%);
     background: var(--accent);
     color: white;
-    padding: 4px 12px;
+    padding: 4px 14px;
     border-radius: 999px;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .planName {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
-    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 4px;
 }
 
 .price {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 8px;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--foreground);
+    line-height: 1;
+    margin-bottom: 4px;
 }
 
 .pricePeriod {
@@ -83,22 +130,23 @@
 .planDesc {
     font-size: 14px;
     color: var(--muted);
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     line-height: 1.5;
-    height: 42px;
-    /* Fixed height for alignment */
+    margin-top: 8px;
 }
 
 .featuresList {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .featureItem {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     font-size: 14px;
-    margin-bottom: 16px;
     line-height: 1.4;
     color: #444;
 }
@@ -106,50 +154,46 @@
 .featureIcon {
     color: var(--accent);
     font-weight: 700;
+    flex-shrink: 0;
 }
 
 .cardBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 14px;
-    border-radius: 999px;
-    border: 1px solid #ddd;
-    background: white;
+    padding: 14px 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: var(--surface-secondary);
     font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.2s;
+    font-family: inherit;
+    color: var(--foreground);
 }
 
 .cardBtn:hover {
     border-color: #333;
 }
 
-.primaryBtn {
-    background: var(--foreground);
-    color: var(--background);
-    border-color: var(--foreground);
-}
-
-.primaryBtn:hover {
-    background: #333;
-}
-
-.enterpriseCard {
-    width: 100%;
-    max-width: 1068px;
-    margin-top: 24px;
-    background: #111;
+.popularCard .cardBtn {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.15);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 60px;
 }
 
-@media (max-width: 768px) {
-    .enterpriseCard {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-        padding: 40px 24px;
+.popularCard .cardBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.arrow {
+    font-size: 16px;
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
     }
 }

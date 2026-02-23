@@ -1,7 +1,7 @@
 export default function Partners() {
     const partners = [
-        "Apex Biomedical", "Valley Health Systems", "Precision Clinical",
-        "City General Hospital", "MediTech Solutions"
+        "MedEquip Biomedicals", "BioTech ISE",
+        "HealthCare Biomedical", "Nexus Biomedical",
     ];
 
     return (

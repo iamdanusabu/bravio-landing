@@ -38,16 +38,38 @@ export default function Reviews() {
         <section className={styles.section}>
             <div className="container">
                 <div className={styles.header}>
+                    <p className={styles.overline}>Confirmed reviews</p>
                     <h2 className={styles.headline}>
-                        See why we&apos;re rated #1 in biomed software
+                        We&apos;ve helped innovative companies
                     </h2>
-                    <div className={styles.badges}>
-                        <div className={styles.badge}>
-                            <span>🏆</span> Rated #1 Field Service Management
-                        </div>
-                        <div className={styles.badge}>
-                            <span>🏅</span> Leader Position Winter 2026
-                        </div>
+                    <p className={styles.subheadline}>
+                        See why we&apos;re rated #1 in biomed software by field service teams nationwide.
+                    </p>
+                </div>
+
+                {/* Key stats */}
+                <div className={styles.statsRow}>
+                    <div className={styles.statItem}>
+                        <div className={styles.statNumber}>24%</div>
+                        <div className={styles.statLabel}>Revenue increase</div>
+                    </div>
+                    <div className={styles.statItem}>
+                        <div className={styles.statNumber}>180K</div>
+                        <div className={styles.statLabel}>Annual revenue</div>
+                    </div>
+                    <div className={styles.statItem}>
+                        <div className={styles.statNumber}>10+</div>
+                        <div className={styles.statLabel}>Months of savings</div>
+                    </div>
+                </div>
+
+                {/* Badges */}
+                <div className={styles.badges}>
+                    <div className={styles.badge}>
+                        <span>🏆</span> Rated #1 Field Service Management
+                    </div>
+                    <div className={styles.badge}>
+                        <span>🏅</span> Leader Position Winter 2026
                     </div>
                 </div>
 
@@ -60,9 +82,9 @@ export default function Reviews() {
                             </p>
                             <div className={styles.user}>
                                 <div className={styles.avatar}></div>
-                                <div className={styles.userInfo}>
+                                <div>
                                     <span className={styles.userName}>{review.author}</span>
-                                    <span style={{ display: 'block', fontSize: 12, color: '#999' }}>{review.role}</span>
+                                    <span className={styles.userRole}>{review.role}</span>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +92,7 @@ export default function Reviews() {
                 </div>
 
                 <div className={styles.ctaContainer}>
-                    <button className="btn btn-primary" style={{ padding: '16px 32px' }}>See all reviews ›</button>
+                    <button className="btn btn-primary" style={{ padding: '0 32px' }}>See all reviews ›</button>
                 </div>
             </div>
         </section>

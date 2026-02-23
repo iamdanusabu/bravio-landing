@@ -1,0 +1,77 @@
+.section {
+    padding: 90px 0;
+    background: #0e1e2b;
+    color: white;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.overline {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 12px;
+}
+
+.headline {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: white;
+    max-width: 560px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.subheadline {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 420px;
+    line-height: 1.6;
+}
+
+.btnRow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+    align-items: flex-end;
+}
+
+.btnSecondary {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s;
+}
+
+.btnSecondary:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .btnRow {
+        align-items: flex-start;
+    }
+
+    .headline {
+        font-size: 30px;
+    }
+}

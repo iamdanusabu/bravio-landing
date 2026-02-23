@@ -1,0 +1,129 @@
+.section {
+    padding: 100px 0;
+    background: var(--background);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.overline {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
+.headline {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 14px;
+    color: var(--foreground);
+}
+
+.subheadline {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Bento grid */
+.bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.bentoCard {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 36px 32px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.bentoCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Icon circle */
+.iconWrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--surface-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--foreground);
+    letter-spacing: -0.02em;
+}
+
+.cardDesc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Highlighted wide card (col-span-2) */
+.bentoCardWide {
+    grid-column: span 2;
+}
+
+/* Stat card (tall) */
+.statNumber {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--foreground);
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .bentoGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bentoCardWide {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .bentoGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .bentoCardWide {
+        grid-column: span 1;
+    }
+
+    .headline {
+        font-size: 28px;
+    }
+}
