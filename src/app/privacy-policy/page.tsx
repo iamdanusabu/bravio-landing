@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
 
                     <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>1. Introduction</h2>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        Welcome to <strong>Bravio Biomed</strong>. We provide a specialized B2B Software-as-a-Service (SaaS) platform tailored for clinical engineering and biomedical professionals. Our software enables organizations to manage medical equipment directories (Assets), track preventive maintenance (PM) schedules, assign and process Work Orders, generate Service Reports, and manage associated financial documents like Estimates and Invoices.
+                        Welcome to <strong>Bravio</strong>. We provide a specialized B2B Software-as-a-Service (SaaS) platform tailored for clinical engineering and biomedical professionals. Our software enables organizations to manage medical equipment directories (Assets), track preventive maintenance (PM) schedules, assign and process Work Orders, generate Service Reports, and manage associated financial documents like Estimates and Invoices.
                     </p>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
                         This Privacy Policy explains how we collect, process, and protect business and personal information when you access or use our platform.

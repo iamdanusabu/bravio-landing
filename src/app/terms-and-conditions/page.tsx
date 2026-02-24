@@ -3,8 +3,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-    title: 'Terms & Conditions — Bravio Biomed',
-    description: 'Terms & Conditions for Bravio Biomed',
+    title: 'Terms & Conditions — Bravio',
+    description: 'Terms & Conditions for Bravio',
 };
 
 export default function TermsAndConditionsPage() {
