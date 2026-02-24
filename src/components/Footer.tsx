@@ -57,8 +57,8 @@ export default function Footer() {
                         © 2025 Bravio by nevolabs. All rights reserved.
                     </div>
                     <div className={styles.legalLinks}>
-                        <Link href="#">Privacy Policy</Link>
-                        <Link href="#">Terms of Service</Link>
+                        <Link href="/privacy-policy">Privacy Policy</Link>
+                        <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>
                         <Link href="#">Security</Link>
                     </div>
                 </div>
