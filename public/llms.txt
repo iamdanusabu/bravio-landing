@@ -1,0 +1,65 @@
+# Bravio
+
+> Bravio is field service management (FSM) software purpose-built for small biomedical ISO and HTM (Healthcare Technology Management) teams of 5 to 50 technicians. It replaces enterprise-bloated FSM tools with a streamlined platform covering work orders, PM scheduling, ISO-compliant service reports, and invoicing.
+
+## Product
+
+Bravio combines FSM, CRM, and CMMS functionality into one platform designed specifically for biomedical device service organizations. It is not a generic field service tool — every feature is built around the compliance and workflow needs of biomedical ISOs.
+
+## Key Features
+
+- **Automated PM Scheduling**: Generates work orders automatically based on device risk levels, manufacturer recommendations, and AEM program requirements. Never miss a preventive maintenance window.
+- **Real-time Work Orders**: Technicians receive jobs instantly on mobile devices (iOS and Android). No paper, no delays, offline capability included.
+- **ISO 13485-Compliant Service Reports**: Generate digitally signed, audit-ready service reports that satisfy ISO 13485, FDA 21 CFR Part 11, and AAMI EQ56 requirements.
+- **Service Invoicing**: Convert closed work orders into invoices in minutes. Integrated billing reduces admin overhead.
+- **Asset Lifecycle Tracking**: Track every biomedical device from procurement to retirement across all customer facilities.
+- **Smart Inventory**: Real-time parts inventory with alerts to prevent stockouts and reduce rush orders.
+- **Client Portal**: Give hospital and facility administrators 24/7 access to compliance reports and service status.
+- **Data Migration**: Import from spreadsheets, legacy CMMS, or generic FSM tools with zero data loss.
+
+## Target Users
+
+- Biomedical Independent Service Organizations (ISOs) with 5–50 technicians
+- In-house hospital biomedical engineering departments
+- Healthcare Technology Management (HTM) professionals
+- Medical device service companies replacing spreadsheets or enterprise tools
+
+## Pricing
+
+- **Plus Plan**: $149/month — Up to 15 users. Includes Customer & Facility Management, Asset Registry & Service History, Work Orders & Scheduling, PM Schedules & Due Lists, Service Invoicing.
+- **Premium Plan**: $299/month — Up to 30 users. Everything in Plus, plus PM Automation Board, Bulk PM Reminders, Customer Self-Service Booking, Job Downtime Tracking.
+
+## Compliance
+
+Bravio is built for ISO 13485, FDA 21 CFR Part 11, and AAMI EQ56 compliance. The platform logs digital signatures, maintains a complete audit trail of all service events, and generates compliance-ready reports for healthcare facility audits.
+
+## Stats
+
+- 1.2M+ medical assets managed on platform
+- 40% average reduction in admin time for customers
+- 100% compliance rate reported by active users
+
+## Company
+
+- Product: Bravio
+- Made by: Nevolabs
+- Address: 3524, Silverside Suite 35B, Wilmington, Delaware 19810-4929, USA
+- Book a demo: https://cal.com/nevolabs-f6qxzs/30min
+- Website: https://hellobravio.com
+
+## Frequently Asked Questions
+
+**What is Bravio?**
+Bravio is the only unified platform that combines Field Service Management (FSM), Customer Relationship Management (CRM), and a Computerized Maintenance Management System (CMMS). Designed specifically for biomedical ISOs, we streamline everything from asset tracking and PM scheduling to customer contracts and technician dispatching.
+
+**Does Bravio support ISO 13485 and FDA compliance?**
+Yes. Our software is built to ensure compliance with ISO 13485 standards, FDA 21 CFR Part 11, and AAMI EQ56 requirements. It automatically logs digital signatures, maintains an audit trail of all service events, and generates compliance-ready reports for healthcare facility audits.
+
+**Can I automate medical device PM schedules?**
+Absolutely. Bravio functions as a specialized CMMS that automates PM scheduling based on device risk levels and manufacturer recommendations. You'll strictly meet AEM (Alternative Equipment Maintenance) program requirements without manual spreadsheet tracking.
+
+**Is this HTM software mobile-friendly for field technicians?**
+Bravio provides a native mobile experience for Healthcare Technology Management (HTM) professionals. Technicians can access work orders, view service manuals, manage inventory, and capture customer compliance signatures directly from their iOS or Android devices, even offline.
+
+**Do you offer data migration for legacy CMMS systems?**
+Yes, we specialize in high-fidelity data migration. We can import asset histories, customer databases, and service logs from legacy systems like spreadsheets, older CMMS, or generic FSM tools, ensuring zero data loss during your transition.

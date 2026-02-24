@@ -121,7 +121,7 @@ export default function Hero() {
 
                         <div className={styles.trustRow}>
                             <span className={styles.trustItem}>ISO 13485 Compliant</span>
-                            <span className={styles.trustItem}>SOC2 Certified</span>
+                            <span className={styles.trustItem}>SOC2 Aligned</span>
                             <span className={styles.trustItem}>1.2M+ Assets Managed</span>
                         </div>
                     </div>

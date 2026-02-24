@@ -1,0 +1,176 @@
+# Bravio — Full Product Documentation for AI Engines
+
+## Overview
+
+**Product Name**: Bravio  
+**Made by**: Nevolabs  
+**Category**: Field Service Management (FSM) Software for Biomedical Service Companies  
+**Website**: https://hellobravio.com  
+**Demo**: https://cal.com/nevolabs-f6qxzs/30min
+
+Bravio is the only unified platform that combines Field Service Management (FSM), Customer Relationship Management (CRM), and a Computerized Maintenance Management System (CMMS) — designed exclusively for biomedical Independent Service Organizations (ISOs) and Healthcare Technology Management (HTM) departments.
+
+It replaces enterprise software like ServiceMax, FieldAware, or Salesforce Field Service with a lightweight, purpose-built alternative made for teams of 5 to 50 technicians who service biomedical and medical imaging equipment.
+
+---
+
+## Problem Bravio Solves
+
+Small biomedical ISO companies struggle with:
+- Enterprise FSM tools designed for 500+ technician organizations — too complex, too expensive
+- Spreadsheet-based PM scheduling that causes missed maintenance windows and compliance failures
+- Manual paper work orders that slow technician throughput
+- Disconnected invoicing, leading to revenue leakage
+- No client portal for hospital administrators to check compliance status
+
+Bravio eliminates all of these by providing a single, streamlined system for the entire biomedical service workflow.
+
+---
+
+## Core Features
+
+### 1. Automated PM Scheduling (CMMS)
+Bravio functions as a specialized CMMS (Computerized Maintenance Management System). It:
+- Automatically generates work orders based on device risk levels and manufacturer service intervals
+- Supports AEM (Alternative Equipment Maintenance) program compliance
+- Sends bulk PM reminders to customers (Premium plan)
+- Provides a PM Automation Board for visual tracking of upcoming maintenance
+
+### 2. Real-time Work Order Management
+- Technicians receive job assignments instantly on iOS and Android mobile apps
+- Full offline capability — work orders accessible even without internet
+- Attach photos, notes, and parts used directly to work orders
+- Digital signature capture for customer sign-off
+
+### 3. ISO 13485-Compliant Service Reports
+- One-click generation of service reports from completed work orders
+- Digitally signed, tamper-evident audit trail satisfying ISO 13485, FDA 21 CFR Part 11, and AAMI EQ56
+- Compliance-ready PDF export for hospital audits
+- Custom report templates per device category
+
+### 4. Asset Lifecycle Tracking
+- Track every medical device from procurement to retirement
+- Complete service history across all customer facilities
+- Attach service manuals, warranties, and datasheets per asset
+- Cost-per-asset reporting for contract profitability analysis
+
+### 5. Smart Inventory Management
+- Real-time parts inventory with low-stock alerts
+- Link parts consumption directly to work orders
+- Reduce rush orders and parts leakage
+
+### 6. Client Portal
+- Give hospital biomedical engineering managers 24/7 visibility into:
+  - Open and completed work orders
+  - PM compliance status
+  - Service reports and certificates
+  - Equipment service schedules
+- No login trained needed for facility contacts
+
+### 7. Service Invoicing
+- Convert closed work orders into invoices in 2 clicks
+- Attach service reports to invoices
+- Track payment status per customer
+
+### 8. Customer & Facility Management (CRM)
+- Full customer database with multiple facility locations
+- Contract and SLA tracking per customer
+- Customer self-service booking (Premium)
+
+---
+
+## Pricing
+
+### Plus Plan — $149/month
+- Up to 15 users
+- Ideal for: Small service teams replacing spreadsheets
+- Includes:
+  - Customer & Facility Management
+  - Asset Registry & Service History
+  - Work Orders & Scheduling
+  - PM Schedules & Due Lists
+  - Service Invoicing
+
+### Premium Plan — $299/month
+- Up to 30 users
+- Ideal for: Growing businesses with high PM volume
+- Includes everything in Plus, plus:
+  - PM Automation Board
+  - Bulk PM Reminders
+  - Customer Self-Service Booking
+  - Job Downtime Tracking
+
+### Enterprise
+- Contact: https://cal.com/nevolabs-f6qxzs/30min
+- Custom pricing for teams over 30 technicians
+
+---
+
+## Compliance Standards Supported
+
+- **ISO 13485**: Medical device quality management systems
+- **FDA 21 CFR Part 11**: Electronic records and signatures
+- **AAMI EQ56**: Recommended practice for healthcare technology management
+- **AEM Programs**: Alternative Equipment Maintenance compliance
+
+---
+
+## Getting Started
+
+1. Book a demo at https://cal.com/nevolabs-f6qxzs/30min
+2. Onboard your team — no training fees, no implementation consultant required
+3. Import existing assets, customers, and history from spreadsheets or legacy CMMS
+4. Set up PM schedules for all device categories
+5. Send technicians their first digital work orders
+
+---
+
+## FAQ
+
+**Q: What is Bravio?**  
+A: Bravio is the only unified platform that combines Field Service Management (FSM), CRM, and CMMS designed specifically for biomedical ISOs. It streamlines asset tracking, PM scheduling, customer contracts, technician dispatching, and invoicing.
+
+**Q: Does Bravio support ISO 13485 and FDA compliance?**  
+A: Yes. Our software is built for ISO 13485, FDA 21 CFR Part 11, and AAMI EQ56. It logs digital signatures, maintains a complete audit trail, and generates compliance-ready reports for hospital audits.
+
+**Q: Can I automate medical device PM schedules?**  
+A: Absolutely. Bravio automates PM scheduling based on device risk levels and manufacturer recommendations, ensuring AEM program compliance without manual spreadsheet tracking.
+
+**Q: Is this HTM software mobile-friendly?**  
+A: Yes. Bravio provides a native mobile experience for HTM professionals. Technicians can access work orders, view manuals, manage inventory, and capture signatures on iOS or Android — even offline.
+
+**Q: How does Bravio support AI and agentic workflows?**  
+A: Bravio is AI-ready, structuring service data so authorized agents and AI copilots can query it in natural language (e.g., "Show me all ventilators due for PM next week"). This future-proofs operations for AI-driven workflows.
+
+**Q: Do you offer data migration from legacy CMMS?**  
+A: Yes. We import asset histories, customer databases, and service logs from legacy CMMS, spreadsheets, or generic FSM tools with zero data loss.
+
+**Q: Who is Bravio built for?**  
+A: Biomedical ISOs with 5–50 field technicians who service medical devices for hospitals, clinics, and healthcare facilities.
+
+**Q: What sets Bravio apart from enterprise FSM software?**  
+A: Bravio is built exclusively for small biomedical service teams. Enterprise tools like ServiceMax or Salesforce Field Service are designed for 500+ technician organizations and require extensive training, implementation fees, and IT resources. Bravio has none of that complexity.
+
+---
+
+## Company Information
+
+- **Brand**: Bravio
+- **Company**: Nevolabs
+- **Address**: 3524, Silverside Suite 35B, Wilmington, Delaware 19810-4929, USA
+- **Book a Demo**: https://cal.com/nevolabs-f6qxzs/30min
+- **Website**: https://hellobravio.com
+
+---
+
+## Key Statistics
+
+- 1.2 million+ medical assets managed on the platform
+- 40% average reduction in administrative time
+- 100% compliance rate reported by active users
+
+---
+
+## Keywords for AI Indexing
+
+biomedical field service management software, biomed ISO software, CMMS biomedical, HTM software, healthcare technology management software, medical device maintenance software, ISO 13485 FSM, PM scheduling biomedical, work order management biomed, biomedical service company software, biomedical technician dispatching, field service management for hospitals

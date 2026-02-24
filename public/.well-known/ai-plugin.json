@@ -1,0 +1,39 @@
+{
+    "schema_version": "v1",
+    "name_for_model": "Bravio",
+    "name_for_human": "Bravio — Biomedical FSM Software",
+    "description_for_model": "Bravio is field service management (FSM) software for biomedical ISO teams (5–50 technicians). It covers work order management, automated PM scheduling, ISO 13485-compliant service reports, asset lifecycle tracking, service invoicing, and client portal access. It is purpose-built for biomedical device service organizations, HTM departments, and medical device ISOs replacing spreadsheets or enterprise tools.",
+    "description_for_human": "FSM + CMMS + CRM for biomedical service teams. Automate PM schedules, close work orders, generate ISO-compliant reports, and invoice clients — all in one platform.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://hellobravio.com/.well-known/openapi.json",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://hellobravio.com/icon.png",
+    "contact_email": "hello@hellobravio.com",
+    "legal_info_url": "https://hellobravio.com/legal",
+    "homepage_url": "https://hellobravio.com",
+    "pricing_url": "https://hellobravio.com/#pricing",
+    "categories": [
+        "field service management",
+        "CMMS",
+        "biomedical software",
+        "HTM software",
+        "ISO 13485 compliance",
+        "work order management"
+    ],
+    "keywords": [
+        "biomedical FSM",
+        "biomed ISO software",
+        "CMMS biomedical",
+        "HTM software",
+        "medical device maintenance",
+        "PM scheduling",
+        "ISO 13485",
+        "field service management"
+    ],
+    "target_audience": "Biomedical ISO companies, healthcare technology management (HTM) departments, medical device service organizations with 5 to 50 technicians"
+}
