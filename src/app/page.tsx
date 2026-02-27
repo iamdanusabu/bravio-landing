@@ -13,7 +13,7 @@ import JsonLd from '@/components/JsonLd';
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Bravio',
+  name: 'Bravio CMMS and FSM for Biomed',
   alternateName: 'Bravio by Nevolabs',
   url: 'https://hellobravio.com',
   logo: 'https://hellobravio.com/icon.png',
@@ -45,7 +45,7 @@ const organizationSchema = {
 const softwareSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Bravio',
+  name: 'Bravio CMMS and FSM for Biomed',
   applicationCategory: 'BusinessApplication',
   applicationSubCategory: 'Field Service Management Software',
   operatingSystem: 'Web, iOS, Android',
@@ -97,7 +97,7 @@ const softwareSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Bravio',
+  name: 'Bravio CMMS and FSM for Biomed',
   url: 'https://hellobravio.com',
   description: 'Field Service Management software for biomedical ISO teams.',
   potentialAction: {

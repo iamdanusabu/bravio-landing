@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Bravio — FSM Software for Biomedical Service Teams",
+    default: "Bravio CMMS and FSM for Biomed",
     template: "%s | Bravio",
   },
   description:
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "Bravio",
+    siteName: "Bravio CMMS and FSM for Biomed",
     title: "Bravio — FSM Software for Biomedical Service Teams",
     description:
       "Purpose-built FSM for biomedical ISO teams. Track PMs, close work orders, generate ISO 13485-compliant reports, and invoice clients — faster than any enterprise tool.",
