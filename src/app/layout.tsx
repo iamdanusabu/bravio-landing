@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Bravio CMMS and FSM for Biomed",
-    template: "%s | Bravio",
+    default: "Bravio FSM — CMMS and Field Service Management for Biomed",
+    template: "%s | Bravio FSM",
   },
   description:
     "Bravio is field service management software purpose-built for small biomedical ISO teams (5–50 technicians). Close work orders, automate PM schedules, generate ISO 13485-compliant service reports, and send invoices — all in one platform. No enterprise bloat.",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Bravio CMMS and FSM for Biomed",
-    title: "Bravio — FSM Software for Biomedical Service Teams",
+    title: "Bravio FSM — Field Service Management for Biomedical Service Teams",
     description:
       "Purpose-built FSM for biomedical ISO teams. Track PMs, close work orders, generate ISO 13485-compliant reports, and invoice clients — faster than any enterprise tool.",
     images: [

@@ -49,9 +49,9 @@ export default function FeaturesGrid() {
         <section className={styles.section}>
             <div className="container">
                 <div className={styles.header}>
-                    <p className={styles.overline}>For any reason</p>
-                    <h2 className={styles.headline}>Powerful features built for growth</h2>
-                    <p className={styles.subheadline}>Everything you need to scale your biomedical service operations.</p>
+                    <p className={styles.overline}>Built for Biomed</p>
+                    <h2 className={styles.headline}>Bravio FSM: Powerful features built for growth</h2>
+                    <p className={styles.subheadline}>Everything you need to scale your Bravio-powered biomedical service operations.</p>
                 </div>
 
                 <div className={styles.bentoGrid}>

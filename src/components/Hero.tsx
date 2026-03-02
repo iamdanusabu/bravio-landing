@@ -10,28 +10,28 @@ import Asset4_Velocity from './Asset4_Velocity';
 const heroOptions = [
     {
         badge: "Built for Small Biomedical ISO Teams",
-        headline: "FSM for Small Biomedical Service Teams — Not Enterprise Bloat",
+        headline: "Bravio: FSM for Small Biomedical Service Teams",
         subheadline: "Close work orders, generate service reports, and send invoices faster. Everything your 5–50 technician team needs — nothing you don't.",
         ctaPrimary: "Request a Demo",
         ctaSecondary: "See How It Works"
     },
     {
         badge: "For ISO Teams with 5–50 Technicians",
-        headline: "Stop Using Enterprise FSM for Small Service Teams",
+        headline: "Stop Using Enterprise FSM — Choose Bravio for Small Teams",
         subheadline: "Convert work orders to reports and invoices in minutes. Run PMs, scheduling, and documentation without the overhead.",
         ctaPrimary: "Watch Demo",
         ctaSecondary: "Take a Product Tour"
     },
     {
         badge: "Designed for Lean Biomedical Service Ops",
-        headline: "Your Techs Fix Equipment — We Handle the Paperwork Flow",
+        headline: "Bravio FSM Handles Your Paperwork Flow",
         subheadline: "Generate compliant service reports, close PMs, and create invoices quickly with FSM software made for small ISO teams.",
         ctaPrimary: "Try the Demo",
         ctaSecondary: "Explore Features"
     },
     {
         badge: "Not Built for Enterprises — Built for You",
-        headline: "FSM Software for Small Biomedical Teams Who Need Speed",
+        headline: "Bravio: The FSM Software for Small Biomedical Teams",
         subheadline: "Faster reports. Faster work order closure. Faster invoices. Purpose-built for 5–50 technician ISO service companies.",
         ctaPrimary: "Request a Demo",
         ctaSecondary: "Take a Tour"
@@ -46,14 +46,20 @@ const assets = [
 ];
 
 export default function Hero() {
+    const [hasMounted, setHasMounted] = useState(false);
     const [index, setIndex] = useState(0);
-    const [displayedHeadline, setDisplayedHeadline] = useState("");
+    const [displayedHeadline, setDisplayedHeadline] = useState(heroOptions[0].headline);
     const [visible, setVisible] = useState(true);
     const currentOption = heroOptions[index];
     const ActiveAsset = assets[index];
 
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
+
     // Rotation Timer — fade out, swap, fade in
     useEffect(() => {
+        if (!hasMounted) return;
         const timer = setInterval(() => {
             setVisible(false);
             setTimeout(() => {
@@ -62,13 +68,20 @@ export default function Hero() {
             }, 400);
         }, 10000);
         return () => clearInterval(timer);
-    }, []);
+    }, [hasMounted]);
 
     // Typing Animation
     useEffect(() => {
+        if (!hasMounted) return;
+
+        const fullText = heroOptions[index].headline;
+
+        // Skip typing animation for the first headline on mount to prevent flicker
+        // since it was already rendered via SSR.
+        if (index === 0 && displayedHeadline === fullText) return;
+
         setDisplayedHeadline("");
         let charIndex = 0;
-        const fullText = heroOptions[index].headline;
 
         const typeTimer = setInterval(() => {
             if (charIndex < fullText.length) {
@@ -80,7 +93,7 @@ export default function Hero() {
         }, 40);
 
         return () => clearInterval(typeTimer);
-    }, [index]);
+    }, [index, hasMounted]);
 
     return (
         <section className={styles.hero}>
