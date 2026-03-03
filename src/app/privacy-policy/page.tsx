@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
     title: 'Privacy Policy — Bravio Biomed',
-    description: 'Privacy Policy for Bravio Biomed',
+    description: 'Privacy Policy for Bravio FSM and CMMS',
 };
 
 export default function PrivacyPolicyPage() {
@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
             <Navbar />
             <div style={{ paddingTop: '120px', paddingBottom: '100px' }}>
                 <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <h1 style={{ fontSize: '40px', marginBottom: '16px' }}>Privacy Policy for Bravio Biomed</h1>
+                    <h1 style={{ fontSize: '40px', marginBottom: '16px' }}>Privacy Policy for Bravio</h1>
                     <p style={{ color: 'var(--muted)', marginBottom: '40px' }}><strong>Effective Date:</strong> February 24, 2026</p>
 
                     <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>1. Introduction</h2>
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
 
                     <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>2. Information We Collect</h2>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        Because Bravio Biomed is a multi-tenant enterprise application, we collect information on behalf of our enterprise customers (&quot;Tenants&quot;).
+                        Because Bravio FSM is a multi-tenant enterprise application, we collect information on behalf of our enterprise customers (&quot;Tenants&quot;).
                     </p>
                     <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
                         <li style={{ marginBottom: '8px' }}><strong>Account Information:</strong> Names, email addresses, roles (e.g., Technician, Administrator), and secure authentication credentials.</li>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
 
                     <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>3. How We Use Your Information</h2>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        We use the collected data strictly to provide and improve the Bravio Biomed platform:
+                        We use the collected data strictly to provide and improve the Bravio FSM platform:
                     </p>
                     <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
                         <li style={{ marginBottom: '8px' }}><strong>Service Delivery:</strong> To facilitate asset management, schedule maintenance, and track work orders across your facilities.</li>
@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
 
                     <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>4. Data Isolation and Security</h2>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        Your data is securely segregated. Bravio Biomed employs strict multi-tenant architecture techniques to ensure that Data, Work Orders, Assets, and Customer records belonging to one Tenant cannot be accessed by another Tenant. We use modern security protocols and encryption to protect your data in transit and at rest.
+                        Your data is securely segregated. Bravio FSM employs strict multi-tenant architecture techniques to ensure that Data, Work Orders, Assets, and Customer records belonging to one Tenant cannot be accessed by another Tenant. We use modern security protocols and encryption to protect your data in transit and at rest.
                     </p>
 
                     <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>5. Third-Party Service Providers</h2>
@@ -59,23 +59,34 @@ export default function PrivacyPolicyPage() {
                     <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
                         <li style={{ marginBottom: '8px' }}><strong>Resend:</strong> For dispatching system emails and service reports.</li>
                         <li style={{ marginBottom: '8px' }}><strong>Twilio:</strong> For delivering SMS notifications regarding scheduled service.</li>
-                        <li style={{ marginBottom: '8px' }}><strong>Hosting &amp; Database Providers:</strong> To securely host the application and its databases.</li>
+                        <li style={{ marginBottom: '8px' }}><strong>Hosting &amp; Database Providers:</strong> To securely host the application and its databases (e.g., Vercel, Supabase).</li>
                     </ul>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        These providers are bound by strict confidentiality and data protection agreements and are only permitted to use the data to perform the specific services we contract them for.
+                        These providers are bound by strict confidentiality and data protection agreements and are only permitted to use the data to perform the specific services we contract them for. We do not sell your data to third parties.
                     </p>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>6. Access and Control</h2>
+                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>6. Google API Disclosure</h2>
+                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
+                        Bravio FSM uses Google APIs to provide features such as Google Calendar synchronization and secure authentication.
+                    </p>
+                    <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
+                        <li style={{ marginBottom: '8px' }}><strong>Information We Receive:</strong> When you connect your Google account, we receive your email address, basic profile information (name and profile picture), and access to your primary Google Calendar (to read and write events).</li>
+                        <li style={{ marginBottom: '8px' }}><strong>How We Use Information:</strong> We use your Google email and profile information to manage your account and authentication. We use Google Calendar access solely to synchronize Bravio Work Orders with your primary Google Calendar.</li>
+                        <li style={{ marginBottom: '8px' }}><strong>Sharing and Disclosure:</strong> We do not share, transfer, or disclose Google user data to any third party, except for our hosting and database providers (Vercel and Supabase) as necessary to provide the platform&apos;s services. We do not use Google user data for advertising purposes.</li>
+                        <li style={{ marginBottom: '8px' }}><strong>Limited Use Compliance:</strong> Bravio FSM&apos;s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+                    </ul>
+
+                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>7. Access and Control</h2>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
                         Tenant Administrators have the ability to manage, correct, or delete user accounts (Technicians), Facilities, and Assets within their specific environment. If a user wishes to exercise individual data subject rights (such as access or deletion), they should directly contact their organization&apos;s Tenant Administrator.
                     </p>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>7. Changes to this Policy</h2>
+                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>8. Changes to this Policy</h2>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
                         We may update this Privacy Policy from time to time. When we make material changes, we will notify your Tenant Administrators via email or through an application notification.
                     </p>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>8. Contact Us</h2>
+                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>9. Contact Us</h2>
                     <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
                         If you have questions or concerns about this Privacy Policy or our data practices, please contact us at <a href="mailto:legal@hellobravio.com" style={{ textDecoration: 'underline' }}>legal@hellobravio.com</a>.
                     </p>
