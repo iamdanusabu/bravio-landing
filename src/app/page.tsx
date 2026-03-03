@@ -30,7 +30,7 @@ const organizationSchema = {
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'sales',
-    url: 'https://cal.com/nevolabs-f6qxzs/30min',
+    url: 'https://cal.com/bravio-demo/30min',
     availableLanguage: 'English',
   },
   sameAs: [],

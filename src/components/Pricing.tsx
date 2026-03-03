@@ -26,7 +26,7 @@ export default function Pricing() {
                             <div className={styles.featureItem}><span className={styles.featureIcon}>✓</span> Service Invoicing</div>
                         </div>
 
-                        <Link href="https://cal.com/nevolabs-f6qxzs/30min" target="_blank" rel="noopener noreferrer" className={styles.cardBtn}>
+                        <Link href="https://cal.com/bravio-demo/30min" target="_blank" rel="noopener noreferrer" className={styles.cardBtn}>
                             Get Started <span className={styles.arrow}>→</span>
                         </Link>
                     </div>
@@ -46,7 +46,7 @@ export default function Pricing() {
                             <div className={styles.featureItem}><span className={styles.featureIcon}>✓</span> Job Downtime Tracking</div>
                         </div>
 
-                        <Link href="https://cal.com/nevolabs-f6qxzs/30min" target="_blank" rel="noopener noreferrer" className={styles.cardBtn}>
+                        <Link href="https://cal.com/bravio-demo/30min" target="_blank" rel="noopener noreferrer" className={styles.cardBtn}>
                             Get Started <span className={styles.arrow}>→</span>
                         </Link>
                     </div>

@@ -82,7 +82,7 @@ export default function Navbar() {
 
                 <div className={styles.right}>
                     <Link href="#" className={styles.login}>Log in</Link>
-                    <Link href="https://cal.com/nevolabs-f6qxzs/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book a demo</Link>
+                    <Link href="https://cal.com/bravio-demo/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book a demo</Link>
                 </div>
             </div>
         </header>

@@ -16,7 +16,7 @@ export default function CTABanner() {
 
                     <div className={styles.btnRow}>
                         <Link
-                            href="https://cal.com/nevolabs-f6qxzs/30min"
+                            href="https://cal.com/bravio-demo/30min"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-accent"

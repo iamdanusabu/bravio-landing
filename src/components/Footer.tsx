@@ -40,7 +40,7 @@ export default function Footer() {
                             <Link href="#">About Us</Link>
                             <Link href="#">Careers</Link>
                             <Link href="#">Customers</Link>
-                            <Link href="https://cal.com/nevolabs-f6qxzs/30min" target="_blank" rel="noopener noreferrer">Contact</Link>
+                            <Link href="https://cal.com/bravio-demo/30min" target="_blank" rel="noopener noreferrer">Contact</Link>
                         </div>
 
                         <div className={styles.linksCol}>

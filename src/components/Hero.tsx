@@ -128,7 +128,7 @@ export default function Hero() {
                         </p>
 
                         <div className={styles.ctaRow}>
-                            <Link href="https://cal.com/nevolabs-f6qxzs/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{currentOption.ctaPrimary}</Link>
+                            <Link href="https://cal.com/bravio-demo/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{currentOption.ctaPrimary}</Link>
                             <button className="btn" style={{ border: '1px solid #ddd' }}>{currentOption.ctaSecondary}</button>
                         </div>
 

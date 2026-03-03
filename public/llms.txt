@@ -44,7 +44,7 @@ Bravio is built for ISO 13485, FDA 21 CFR Part 11, and AAMI EQ56 compliance. The
 - Product: Bravio
 - Made by: Nevolabs
 - Address: 3524, Silverside Suite 35B, Wilmington, Delaware 19810-4929, USA
-- Book a demo: https://cal.com/nevolabs-f6qxzs/30min
+- Book a demo: https://cal.com/bravio-demo/30min
 - Website: https://hellobravio.com
 
 ## Frequently Asked Questions
