@@ -41,31 +41,33 @@ export default function Navbar() {
                         <div className={styles.navItem}>
                             <div className={styles.link}>Platform ▾</div>
                             <div className={styles.megaMenu}>
-                                <div className={styles.megaContainer}>
-                                    <div className={styles.megaColumn}>
-                                        <Link href="#" className={styles.megaLink}>Field Service</Link>
-                                        <span className={styles.megaDesc}>Dispatch techs, optimize routes, mobile-first.</span>
+                                <div className={styles.megaMenuInner}>
+                                    <div className={styles.megaContainer}>
+                                        <div className={styles.megaColumn}>
+                                            <Link href="#" className={styles.megaLink}>Field Service</Link>
+                                            <span className={styles.megaDesc}>Dispatch techs, optimize routes, mobile-first.</span>
 
-                                        <Link href="#" className={styles.megaLink}>Compliance</Link>
-                                        <span className={styles.megaDesc}>Automated reporting for JCAHO, DNV, AAMI.</span>
-                                    </div>
-                                    <div className={styles.megaColumn}>
-                                        <Link href="#" className={styles.megaLink}>Financial Management</Link>
-                                        <span className={styles.megaDesc}>Track profitability per asset & contract.</span>
+                                            <Link href="#" className={styles.megaLink}>Compliance</Link>
+                                            <span className={styles.megaDesc}>Automated reporting for JCAHO, DNV, AAMI.</span>
+                                        </div>
+                                        <div className={styles.megaColumn}>
+                                            <Link href="#" className={styles.megaLink}>Financial Management</Link>
+                                            <span className={styles.megaDesc}>Track profitability per asset & contract.</span>
 
-                                        <Link href="#" className={styles.megaLink}>Time Tracking</Link>
-                                        <span className={styles.megaDesc}>Capture billable hours & util.</span>
-                                    </div>
-                                    <div className={styles.megaColumn}>
-                                        <Link href="#" className={styles.megaLink}>Resource Management</Link>
-                                        <span className={styles.megaDesc}>Real-time tech availability.</span>
+                                            <Link href="#" className={styles.megaLink}>Time Tracking</Link>
+                                            <span className={styles.megaDesc}>Capture billable hours & util.</span>
+                                        </div>
+                                        <div className={styles.megaColumn}>
+                                            <Link href="#" className={styles.megaLink}>Resource Management</Link>
+                                            <span className={styles.megaDesc}>Real-time tech availability.</span>
 
-                                        <Link href="#" className={styles.megaLink}>Customer Portal</Link>
-                                        <span className={styles.megaDesc}>24/7 service requests.</span>
-                                    </div>
-                                    <div className={styles.megaColumn}>
-                                        <Link href="#" className={styles.megaLink}>AI Insights</Link>
-                                        <span className={styles.megaDesc}>Predict failures & optimize inventory.</span>
+                                            <Link href="#" className={styles.megaLink}>Customer Portal</Link>
+                                            <span className={styles.megaDesc}>24/7 service requests.</span>
+                                        </div>
+                                        <div className={styles.megaColumn}>
+                                            <Link href="#" className={styles.megaLink}>AI Insights</Link>
+                                            <span className={styles.megaDesc}>Predict failures & optimize inventory.</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
