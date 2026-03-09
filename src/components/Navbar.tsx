@@ -75,6 +75,7 @@ export default function Navbar() {
 
 
                         <Link href="/faq" className={styles.link}>FAQ</Link>
+                        <Link href="/blog" className={styles.link}>Blog</Link>
                         <Link href="#" className={styles.link}>Resources</Link>
                         <Link href="/#pricing" className={styles.link}>Pricing</Link>
                     </nav>

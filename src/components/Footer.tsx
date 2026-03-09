@@ -45,7 +45,7 @@ export default function Footer() {
 
                         <div className={styles.linksCol}>
                             <h4>Resources</h4>
-                            <Link href="#">Blog</Link>
+                            <Link href="/blog">Blog</Link>
                             <Link href="#">Knowledge Base</Link>
                             <Link href="#">System Status</Link>
                         </div>
