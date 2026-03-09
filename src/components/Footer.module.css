@@ -125,3 +125,62 @@
         gap: 20px;
     }
 }
+
+.appSection {
+    margin-top: 32px;
+}
+
+.appDescription {
+    font-size: 14px;
+    color: var(--foreground);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.appLinks {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.appButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--foreground);
+    color: var(--background);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.appButton:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.appIcon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.appText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.appTextSmall {
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.appTextLarge {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
