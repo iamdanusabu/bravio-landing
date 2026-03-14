@@ -3,8 +3,24 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-    title: 'Terms & Conditions — Bravio',
-    description: 'Terms & Conditions for Bravio',
+    title: 'Terms & Conditions — Bravio Biomed',
+    description: 'Terms and Conditions for the Bravio Biomed FSM platform. Effective February 24, 2026.',
+};
+
+const sectionStyle: React.CSSProperties = { marginTop: '48px' };
+const h2Style: React.CSSProperties = { fontSize: '22px', fontWeight: 700, marginBottom: '12px', marginTop: '32px' };
+const pStyle: React.CSSProperties = { marginBottom: '16px', lineHeight: 1.75, color: 'var(--muted)' };
+const ulStyle: React.CSSProperties = { paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.75, color: 'var(--muted)' };
+const liStyle: React.CSSProperties = { marginBottom: '8px' };
+const alertStyle: React.CSSProperties = {
+    background: 'rgba(255,255,255,0.04)',
+    border: '1px solid rgba(255,255,255,0.1)',
+    borderRadius: '8px',
+    padding: '16px 20px',
+    marginBottom: '16px',
+    lineHeight: 1.75,
+    color: 'var(--muted)',
+    fontSize: '14px',
 };
 
 export default function TermsAndConditionsPage() {
@@ -12,75 +28,236 @@ export default function TermsAndConditionsPage() {
         <main aria-label="Bravio Terms and Conditions">
             <Navbar />
             <div style={{ paddingTop: '120px', paddingBottom: '100px' }}>
-                <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <h1 style={{ fontSize: '40px', marginBottom: '16px' }}>Terms &amp; Conditions for Bravio Biomed</h1>
-                    <p style={{ color: 'var(--muted)', marginBottom: '40px' }}><strong>Effective Date:</strong> February 24, 2026</p>
+                <div className="container" style={{ maxWidth: '820px', margin: '0 auto' }}>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>1. Acceptance of Terms</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        By accessing or using the <strong>Bravio Biomed</strong> Software-as-a-Service (SaaS) platform (&quot;Service&quot;), your organization (&quot;Customer&quot; or &quot;Tenant&quot;) agrees to be bound by these Terms and Conditions. If you do not agree to these terms, do not use the Service.
-                    </p>
+                    <h1 style={{ fontSize: '40px', fontWeight: 800, marginBottom: '12px' }}>Terms &amp; Conditions</h1>
+                    <p style={{ color: 'var(--muted)', marginBottom: '8px', fontSize: '15px' }}>Bravio Biomed</p>
+                    <p style={{ color: 'var(--muted)', marginBottom: '40px', fontSize: '15px' }}><strong>Effective Date:</strong> February 24, 2026</p>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>2. Description of Service</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        Bravio Biomed provides a cloud-based application designed to help clinical engineering teams and biomedical service companies manage their operations. The Service includes features for:
-                    </p>
-                    <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
-                        <li style={{ marginBottom: '8px' }}>Asset tracking and inventory management.</li>
-                        <li style={{ marginBottom: '8px' }}>Work order creation, assignment, and tracking.</li>
-                        <li style={{ marginBottom: '8px' }}>Preventive Maintenance (PM) scheduling.</li>
-                        <li style={{ marginBottom: '8px' }}>Generation of Service Reports, Estimates, and Invoices.</li>
-                        <li style={{ marginBottom: '8px' }}>Automated communication (Email and SMS) with facilities regarding service events.</li>
-                    </ul>
+                    <div style={alertStyle}>
+                        PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE ACCESSING OR USING THE BRAVIO BIOMED PLATFORM. BY CREATING AN ACCOUNT, ACCESSING THE PLATFORM, OR PERMITTING YOUR EMPLOYEES OR AGENTS TO DO SO, YOU (&quot;CUSTOMER&quot;) AGREE TO BE LEGALLY BOUND BY ALL TERMS HEREIN. IF YOU DO NOT AGREE, YOU MUST IMMEDIATELY CEASE ALL USE OF THE SERVICE.
+                    </div>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>3. Account Security and Tenant Isolation</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        The Service utilizes a multi-tenant architecture. Customers are responsible for managing access to their specific Tenant environment.
-                    </p>
-                    <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
-                        <li style={{ marginBottom: '8px' }}><strong>User Management:</strong> You are solely responsible for creating, managing, and revoking access for your Technicians, Administrators, and staff.</li>
-                        <li style={{ marginBottom: '8px' }}><strong>Security:</strong> You agree to safeguard your authentication credentials. Bravio Biomed is not liable for data breaches resulting from compromised passwords or unauthorized access granted by the Customer.</li>
-                    </ul>
+                    {/* Section 1 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>1. Definitions</h2>
+                        <p style={pStyle}>For purposes of these Terms and Conditions, the following definitions apply:</p>
+                        <ul style={ulStyle}>
+                            <li style={liStyle}><strong>&quot;Bravio,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;</strong> refers to Bravio Biomed, the entity that owns, operates, and provides the Service.</li>
+                            <li style={liStyle}><strong>&quot;Service&quot; or &quot;Platform&quot;</strong> means the cloud-based Bravio FSM software application, including all features, modules, APIs, interfaces, content, documentation, and updates.</li>
+                            <li style={liStyle}><strong>&quot;Customer,&quot; &quot;Tenant,&quot; &quot;you,&quot; or &quot;your&quot;</strong> means the organization or entity that has subscribed to or is accessing the Service, including all authorized users under that account.</li>
+                            <li style={liStyle}><strong>&quot;User&quot;</strong> means any individual (employee, contractor, technician, or administrator) who accesses the Service on behalf of the Customer.</li>
+                            <li style={liStyle}><strong>&quot;Tenant Data&quot;</strong> means all data, information, and content inputted, uploaded, or generated by the Customer or its Users within the Service.</li>
+                            <li style={liStyle}><strong>&quot;Subscription&quot;</strong> means the agreed-upon access plan under which the Customer uses the Service.</li>
+                        </ul>
+                    </div>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>4. Limitation of Liability for Medical Devices &amp; Compliance</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        <strong>Bravio Biomed is not a healthcare provider and does not provide medical or clinical advice.</strong> The Service is strictly an operational tracking and management tool.
-                    </p>
-                    <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
-                        <li style={{ marginBottom: '8px' }}><strong>Device Safety:</strong> The software records maintenance actions, but Bravio Biomed makes no warranty or guarantee regarding the actual safety, efficacy, calibration, or operational status of any medical devices and equipment managed within the platform.</li>
-                        <li style={{ marginBottom: '8px' }}><strong>Technician Responsibility:</strong> The Customer is solely responsible for ensuring that its technicians possess the necessary certifications, skills, and specialties to perform work on complex medical equipment.</li>
-                        <li style={{ marginBottom: '8px' }}><strong>Regulatory Compliance:</strong> It is the Customer&apos;s responsibility to ensure that their use of the Service, and the resulting documentation (Service Reports), complies with all applicable local, national, and international healthcare regulations (e.g., FDA, HIPAA, Joint Commission standards).</li>
-                    </ul>
+                    {/* Section 2 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>2. Acceptance of Terms and Modifications</h2>
+                        <p style={pStyle}>
+                            <strong>2.1</strong> By accessing, registering for, or using the Service, you represent and warrant that: (a) you have the legal authority to bind your organization to these Terms; (b) your organization is legally permitted to use the Service in your jurisdiction; and (c) all information you provide is accurate and current.
+                        </p>
+                        <p style={pStyle}>
+                            <strong>2.2</strong> Bravio reserves the right, in its sole discretion, to modify, amend, or update these Terms at any time without prior notice. Changes become effective immediately upon posting to the Service or our website. Your continued use of the Service following any modification constitutes your unconditional acceptance of the revised Terms. It is your responsibility to review these Terms periodically. If you do not agree to any modification, your sole remedy is to discontinue use of the Service.
+                        </p>
+                    </div>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>5. Acceptable Use</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        Customers agree not to:
-                    </p>
-                    <ul style={{ paddingLeft: '24px', marginBottom: '16px', lineHeight: 1.6 }}>
-                        <li style={{ marginBottom: '8px' }}>Use the Service to store or transmit malicious code, viruses, or illegal material.</li>
-                        <li style={{ marginBottom: '8px' }}>Attempt to gain unauthorized access to the underlying infrastructure or data belonging to other Tenants.</li>
-                        <li style={{ marginBottom: '8px' }}>Send unsolicited communications (spam) using the built-in Resend or Twilio integrations.</li>
-                    </ul>
+                    {/* Section 3 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>3. Description of Service</h2>
+                        <p style={pStyle}>
+                            <strong>3.1</strong> Bravio provides a cloud-based SaaS platform for biomedical and clinical engineering service operations. Features may include: asset tracking, work order management, preventive maintenance scheduling, service report generation, invoicing, technician scheduling, and automated notifications.
+                        </p>
+                        <p style={pStyle}>
+                            <strong>3.2</strong> The Service is provided on an &quot;as-is&quot; and &quot;as-available&quot; basis. We reserve the right, at any time and without notice, to: modify, suspend, or discontinue any feature or the entirety of the Service; impose limits on certain features; restrict access to part or all of the Service.
+                        </p>
+                        <p style={pStyle}>
+                            <strong>3.3</strong> We do not guarantee that the Service will meet your specific requirements or that it will be uninterrupted, timely, secure, or error-free. Any reliance on the Service for critical operational decisions is undertaken entirely at your own risk.
+                        </p>
+                    </div>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>6. Service Availability and Updates</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        We strive to maintain high availability of the Service. However, Bravio Biomed does not guarantee completely uninterrupted or error-free operation. We reserve the right to deploy updates, bug fixes, and feature changes to the Service at any time.
-                    </p>
+                    {/* Section 4 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>4. Account Registration and Security</h2>
+                        <p style={pStyle}>
+                            <strong>4.1</strong> To use the Service, your organization must register and maintain an account. You agree to provide accurate, complete, and current information and to update it as necessary.
+                        </p>
+                        <p style={pStyle}>
+                            <strong>4.2</strong> You are solely and entirely responsible for: (a) maintaining the confidentiality of all login credentials, passwords, and access tokens associated with your account; (b) all activities that occur under your account, whether authorized by you or not; (c) immediately notifying Bravio of any suspected unauthorized access or breach of security.
+                        </p>
+                        <p style={pStyle}>
+                            <strong>4.3</strong> BRAVIO WILL NOT BE LIABLE FOR ANY LOSS, DAMAGE, OR LIABILITY ARISING FROM YOUR FAILURE TO MAINTAIN THE SECURITY OF YOUR ACCOUNT CREDENTIALS. This includes losses caused by unauthorized access resulting from compromised passwords, shared credentials, phishing, social engineering, or any other means attributable to your organization&apos;s security practices.
+                        </p>
+                        <p style={pStyle}>
+                            <strong>4.4</strong> You agree not to share, sell, or transfer your account or credentials to any third party without express written consent from Bravio.
+                        </p>
+                    </div>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>7. Intellectual Property</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        The Service, including its code, design, features, and functionality, is owned by Bravio Biomed and is protected by intellectual property laws. Customers retain all rights to the data they input into the system (Tenant Data).
-                    </p>
+                    {/* Section 5 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>5. Subscription, Fees, and Payment</h2>
+                        <p style={pStyle}><strong>5.1</strong> Access to the Service requires a paid Subscription. All fees are set forth in your applicable order form, subscription agreement, or pricing plan, which is incorporated herein by reference.</p>
+                        <p style={pStyle}><strong>5.2</strong> All fees are due in advance of the applicable billing period and are non-refundable except as expressly stated herein or required by applicable law. We reserve the right to modify pricing upon reasonable notice.</p>
+                        <p style={pStyle}><strong>5.3</strong> Bravio reserves the right to suspend or terminate access to the Service for non-payment of fees. Suspension or termination for non-payment does not relieve you of the obligation to pay outstanding balances.</p>
+                        <p style={pStyle}><strong>5.4</strong> You are responsible for all taxes, duties, and charges applicable to your Subscription in your jurisdiction. Bravio is not responsible for withholding or remitting taxes on your behalf.</p>
+                    </div>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>8. Termination</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        Bravio Biomed reserves the right to suspend or terminate a Customer&apos;s access to the Service for violation of these Terms or non-payment of subscription fees. Customers may terminate their use of the Service by providing written notice according to their specific subscription agreement.
-                    </p>
+                    {/* Section 6 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>6. Acceptable Use Policy</h2>
+                        <p style={pStyle}><strong>6.1</strong> You agree to use the Service only for lawful business purposes and in accordance with these Terms. You are solely responsible for the legality, accuracy, and appropriateness of all content, data, and actions conducted through your account.</p>
+                        <p style={pStyle}><strong>6.2</strong> You agree NOT to:</p>
+                        <ul style={ulStyle}>
+                            <li style={liStyle}>Use the Service to violate any applicable law, regulation, or third-party rights.</li>
+                            <li style={liStyle}>Transmit, store, or process any data that is illegal, defamatory, obscene, or fraudulent.</li>
+                            <li style={liStyle}>Attempt to gain unauthorized access to any portion of the Service, its infrastructure, or other customers&apos; data.</li>
+                            <li style={liStyle}>Introduce viruses, malware, ransomware, or any other harmful or disruptive code.</li>
+                            <li style={liStyle}>Use the Service to send unsolicited communications, spam, or phishing messages.</li>
+                            <li style={liStyle}>Reverse engineer, decompile, or disassemble any portion of the Service.</li>
+                            <li style={liStyle}>Sublicense, resell, or commercially exploit the Service without Bravio&apos;s prior written consent.</li>
+                            <li style={liStyle}>Overload or interfere with the integrity or performance of the Service&apos;s infrastructure.</li>
+                        </ul>
+                        <p style={pStyle}><strong>6.3</strong> Bravio reserves the right to investigate and take appropriate action against violations of this policy, including suspending or terminating your account without prior notice and without liability to you.</p>
+                    </div>
 
-                    <h2 style={{ fontSize: '24px', marginTop: '32px', marginBottom: '16px' }}>9. Contact Information</h2>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.6 }}>
-                        For questions regarding these Terms and Conditions, please contact <a href="mailto:legal@hellobravio.com" style={{ textDecoration: 'underline' }}>legal@hellobravio.com</a>.
-                    </p>
+                    {/* Section 7 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>7. Medical Device Disclaimer and Regulatory Compliance</h2>
+                        <div style={alertStyle}>
+                            THE SERVICE IS A STRICTLY OPERATIONAL MANAGEMENT AND RECORD-KEEPING TOOL. BRAVIO IS NOT A HEALTHCARE PROVIDER, MEDICAL DEVICE MANUFACTURER, OR REGULATORY BODY. NOTHING IN THE SERVICE CONSTITUTES MEDICAL ADVICE, CLINICAL GUIDANCE, OR REGULATORY CERTIFICATION OF ANY KIND.
+                        </div>
+                        <p style={pStyle}><strong>7.1 Device Safety.</strong> The Service records maintenance information and operational notes as entered by your technicians. Bravio makes absolutely no representation, warranty, or guarantee — express or implied — regarding the actual safety, operational status, calibration accuracy, efficacy, or regulatory compliance of any medical equipment managed, tracked, or documented within the Platform.</p>
+                        <p style={pStyle}><strong>7.2 Technician Qualification.</strong> The Customer is solely and exclusively responsible for ensuring that all technicians and personnel who perform service work are appropriately licensed, certified, trained, and competent to perform work on biomedical and medical equipment. Bravio has no obligation to verify, validate, or monitor technician qualifications, certifications, or skill levels.</p>
+                        <p style={pStyle}><strong>7.3 Regulatory Compliance.</strong> The Customer bears full and exclusive responsibility for ensuring that: (a) its use of the Service complies with all applicable local, state, federal, and international laws and regulations, including but not limited to FDA regulations, HIPAA, Joint Commission standards, ISO 13485, and any other applicable healthcare standards; (b) all documentation, service reports, and records generated through the Service satisfy applicable regulatory requirements; (c) any decisions made based on data within the Service comply with applicable clinical and regulatory standards.</p>
+                        <p style={pStyle}><strong>7.4</strong> Bravio shall have no liability whatsoever for any harm, injury, death, regulatory penalty, fine, audit finding, or legal consequence arising from or related to any medical device serviced, tracked, or documented within the Platform.</p>
+                    </div>
+
+                    {/* Section 8 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>8. Intellectual Property Rights</h2>
+                        <p style={pStyle}><strong>8.1</strong> The Service, including all software, code, interfaces, designs, documentation, trademarks, and proprietary methodologies, is and shall remain the exclusive property of Bravio and is protected by copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
+                        <p style={pStyle}><strong>8.2</strong> These Terms grant you a limited, non-exclusive, non-transferable, revocable license to access and use the Service solely for your internal business operations during your active Subscription period. No other rights are granted.</p>
+                        <p style={pStyle}><strong>8.3</strong> You retain ownership of your Tenant Data. By submitting data to the Service, you grant Bravio a non-exclusive, royalty-free license to process, store, and transmit your Tenant Data solely to the extent necessary to provide the Service.</p>
+                        <p style={pStyle}><strong>8.4</strong> Bravio may collect and use aggregated, anonymized, and de-identified data derived from Customer usage for the purposes of improving the Service, developing new features, and generating internal analytics. Such data will not identify your organization or any individual.</p>
+                    </div>
+
+                    {/* Section 9 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>9. Data and Privacy</h2>
+                        <p style={pStyle}><strong>9.1</strong> Bravio&apos;s collection, use, and handling of personal and business data is governed by our Privacy Policy, available at hellobravio.com and incorporated herein by reference. By using the Service, you consent to Bravio&apos;s data practices as described in the Privacy Policy.</p>
+                        <p style={pStyle}><strong>9.2</strong> You are responsible for ensuring that you have all necessary rights, consents, and legal bases to input personal data of any individuals (including patients, facility staff, or technicians) into the Service, and that doing so complies with applicable privacy laws including HIPAA, GDPR, CCPA, and any other applicable regulation.</p>
+                        <p style={pStyle}><strong>9.3</strong> Bravio employs commercially reasonable technical and organizational security measures. However, no security system is impenetrable. BRAVIO DOES NOT GUARANTEE THAT THE SERVICE IS IMMUNE FROM CYBERATTACKS, DATA BREACHES, OR UNAUTHORIZED ACCESS, AND BRAVIO SHALL HAVE NO LIABILITY FOR SECURITY INCIDENTS BEYOND WHAT IS EXPRESSLY SET FORTH IN OUR SECURITY INCIDENT RESPONSE POLICY.</p>
+                    </div>
+
+                    {/* Section 10 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>10. Third-Party Integrations and Services</h2>
+                        <p style={pStyle}><strong>10.1</strong> The Service may integrate with or link to third-party services, including Google Calendar, Resend, Twilio, Vercel, Supabase, and others. These third-party services are governed by their own terms of service and privacy policies, and Bravio has no control over their operation, availability, or data practices.</p>
+                        <p style={pStyle}><strong>10.2</strong> BRAVIO EXPRESSLY DISCLAIMS ALL LIABILITY FOR: (a) the availability, accuracy, or functionality of any third-party service; (b) any loss or damage arising from your use of or reliance on third-party integrations; (c) any data shared with or processed by third-party providers in the course of delivering the Service.</p>
+                        <p style={pStyle}><strong>10.3</strong> Your use of any third-party integration constitutes your acceptance of that party&apos;s terms. Bravio is not a party to any agreement between you and a third-party provider.</p>
+                    </div>
+
+                    {/* Section 11 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>11. Disclaimer of Warranties</h2>
+                        <div style={alertStyle}>
+                            THE SERVICE IS PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS, IMPLIED, OR STATUTORY. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, BRAVIO EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO: (A) IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT; (B) WARRANTIES THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF VIRUSES; (C) WARRANTIES REGARDING THE ACCURACY, COMPLETENESS, OR RELIABILITY OF ANY DATA, CONTENT, OR RESULTS WITHIN THE SERVICE; (D) WARRANTIES THAT ANY DEFECT OR ERROR IN THE SERVICE WILL BE CORRECTED.
+                        </div>
+                        <p style={pStyle}>No advice or information, whether oral or written, obtained from Bravio or through the Service shall create any warranty not expressly stated in these Terms.</p>
+                    </div>
+
+                    {/* Section 12 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>12. Limitation of Liability</h2>
+                        <div style={alertStyle}>
+                            TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL BRAVIO, ITS OFFICERS, DIRECTORS, EMPLOYEES, SHAREHOLDERS, AFFILIATES, AGENTS, LICENSORS, OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES — INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF DATA, LOSS OF BUSINESS, BUSINESS INTERRUPTION, PERSONAL INJURY, PROPERTY DAMAGE, REGULATORY FINES, OR REPUTATIONAL HARM — ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE SERVICE, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE) AND EVEN IF BRAVIO HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+                        </div>
+                        <p style={pStyle}><strong>12.1 Aggregate Cap.</strong> To the fullest extent permitted by law, Bravio&apos;s total cumulative liability to you for all claims arising out of or relating to these Terms or the Service shall not exceed the total subscription fees paid by you to Bravio in the three (3) calendar months immediately preceding the event giving rise to the claim.</p>
+                        <p style={pStyle}><strong>12.2 Essential Basis.</strong> The parties acknowledge that the limitations of liability set forth in this section reflect a reasonable allocation of risk and are an essential element of the basis of the bargain between the parties. Bravio would not provide the Service without these limitations.</p>
+                        <p style={pStyle}><strong>12.3 Multiple Claims.</strong> The existence of multiple claims, suits, or actions shall not enlarge or expand the liability cap set forth herein.</p>
+                        <p style={pStyle}><strong>12.4</strong> Some jurisdictions do not allow the exclusion or limitation of certain damages. In such jurisdictions, Bravio&apos;s liability shall be limited to the maximum extent permitted by applicable law.</p>
+                    </div>
+
+                    {/* Section 13 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>13. Indemnification</h2>
+                        <p style={pStyle}><strong>13.1</strong> You agree to defend, indemnify, and hold harmless Bravio and its officers, directors, employees, agents, contractors, licensors, and successors (collectively, &quot;Bravio Parties&quot;) from and against any and all claims, damages, liabilities, losses, fines, penalties, costs, and expenses (including reasonable attorneys&apos; fees) arising out of or related to:</p>
+                        <ul style={ulStyle}>
+                            <li style={liStyle}>Your use of or access to the Service.</li>
+                            <li style={liStyle}>Your violation of these Terms or any applicable law or regulation.</li>
+                            <li style={liStyle}>Your Tenant Data, including any infringement of third-party intellectual property rights.</li>
+                            <li style={liStyle}>Any work performed by your technicians on medical devices or equipment.</li>
+                            <li style={liStyle}>Your failure to comply with applicable healthcare regulations, including HIPAA and FDA requirements.</li>
+                            <li style={liStyle}>Any negligence, willful misconduct, or fraud by you, your employees, or your agents.</li>
+                            <li style={liStyle}>Any claims by third parties, including patients or facility staff, arising from services documented in the Platform.</li>
+                        </ul>
+                        <p style={pStyle}><strong>13.2</strong> Bravio reserves the right to assume exclusive control of any matter subject to indemnification by you, at your expense. You agree to cooperate fully with Bravio in the defense of such matters.</p>
+                    </div>
+
+                    {/* Section 14 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>14. Service Availability, Maintenance, and Force Majeure</h2>
+                        <p style={pStyle}><strong>14.1</strong> Bravio will use commercially reasonable efforts to maintain Service availability. However, Bravio does not guarantee any specific uptime level, service level agreement (SLA), or availability percentage unless expressly agreed in a separate written SLA addendum signed by Bravio.</p>
+                        <p style={pStyle}><strong>14.2</strong> Bravio may schedule planned maintenance at any time and will endeavor to provide advance notice where practical. Bravio is not liable for any downtime, data loss, or damages resulting from maintenance activities.</p>
+                        <p style={pStyle}><strong>14.3</strong> Bravio shall not be liable for any failure or delay in performance of the Service due to causes beyond its reasonable control, including but not limited to: acts of God, natural disasters, pandemic, war, terrorism, civil unrest, government action, power failures, internet outages, cyberattacks by third parties, failure of third-party infrastructure providers, or any other force majeure event.</p>
+                    </div>
+
+                    {/* Section 15 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>15. Data Retention and Deletion</h2>
+                        <p style={pStyle}><strong>15.1</strong> Upon termination or expiration of your Subscription, Bravio will retain your Tenant Data for a period of thirty (30) days, during which you may request an export. After this retention period, Bravio reserves the right to permanently delete your Tenant Data without further notice.</p>
+                        <p style={pStyle}><strong>15.2</strong> Bravio is not obligated to retain or archive your Tenant Data beyond the active Subscription period. You are solely responsible for maintaining your own backup copies of any critical data.</p>
+                        <p style={pStyle}><strong>15.3</strong> Bravio shall not be liable for any loss resulting from the deletion of data following the expiration of the retention period.</p>
+                    </div>
+
+                    {/* Section 16 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>16. Termination</h2>
+                        <p style={pStyle}><strong>16.1 By Customer.</strong> You may terminate your Subscription at any time by providing written notice in accordance with your subscription agreement. Termination does not entitle you to a refund of prepaid fees.</p>
+                        <p style={pStyle}><strong>16.2 By Bravio.</strong> Bravio may suspend or terminate your access to the Service immediately and without prior notice if: (a) you breach any provision of these Terms; (b) your payment is overdue; (c) we determine, in our sole discretion, that your use of the Service poses a security, legal, or reputational risk to Bravio or its other customers; (d) we are required to do so by applicable law or a government authority.</p>
+                        <p style={pStyle}><strong>16.3 Effect of Termination.</strong> Upon termination, your right to access the Service immediately ceases. Sections 7, 8, 11, 12, 13, and 17 through 21 shall survive termination and remain in full force and effect.</p>
+                    </div>
+
+                    {/* Section 17 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>17. Dispute Resolution and Arbitration</h2>
+                        <p style={pStyle}><strong>17.1 Informal Resolution.</strong> Before initiating any formal dispute process, the parties agree to attempt to resolve disputes through good-faith negotiation for a period of thirty (30) days following written notice of the dispute.</p>
+                        <p style={pStyle}><strong>17.2 Binding Arbitration.</strong> If informal resolution fails, all disputes arising out of or relating to these Terms or the Service shall be resolved by binding arbitration conducted by a mutually agreed-upon arbitration body, in accordance with its commercial arbitration rules. The arbitration shall take place in the jurisdiction in which Bravio is incorporated. The arbitrator&apos;s decision shall be final and binding and may be entered as a judgment in any court of competent jurisdiction.</p>
+                        <p style={pStyle}><strong>17.3 Waiver of Class Actions.</strong> TO THE FULLEST EXTENT PERMITTED BY LAW, YOU WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT OR CLASS-WIDE ARBITRATION AGAINST BRAVIO. All claims must be brought in your individual capacity only.</p>
+                        <p style={pStyle}><strong>17.4 Injunctive Relief.</strong> Notwithstanding the above, either party may seek injunctive or other equitable relief in a court of competent jurisdiction to protect its intellectual property rights or prevent irreparable harm.</p>
+                    </div>
+
+                    {/* Section 18 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>18. Governing Law</h2>
+                        <p style={pStyle}>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Bravio is incorporated, without regard to its conflict-of-law principles. Subject to the arbitration provisions above, the parties consent to exclusive jurisdiction and venue in the courts of that jurisdiction.</p>
+                    </div>
+
+                    {/* Section 19 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>19. Entire Agreement and Severability</h2>
+                        <p style={pStyle}><strong>19.1</strong> These Terms, together with the Privacy Policy and any applicable subscription agreement or order form, constitute the entire agreement between you and Bravio with respect to the Service and supersede all prior agreements, negotiations, and understandings.</p>
+                        <p style={pStyle}><strong>19.2</strong> If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions shall continue in full force and effect. The unenforceable provision shall be modified to the minimum extent necessary to make it enforceable.</p>
+                    </div>
+
+                    {/* Section 20 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>20. No Waiver</h2>
+                        <p style={pStyle}>Bravio&apos;s failure to enforce any right or provision of these Terms shall not constitute a waiver of that right or provision. Any waiver of a particular breach shall not constitute a waiver of any subsequent or continuing breach.</p>
+                    </div>
+
+                    {/* Section 21 */}
+                    <div style={sectionStyle}>
+                        <h2 style={h2Style}>21. Contact Information</h2>
+                        <p style={pStyle}>For questions, legal notices, or inquiries regarding these Terms and Conditions, please contact:</p>
+                        <ul style={ulStyle}>
+                            <li style={liStyle}>Email: <a href="mailto:legal@hellobravio.com" style={{ textDecoration: 'underline' }}>legal@hellobravio.com</a></li>
+                            <li style={liStyle}>Website: <a href="https://hellobravio.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>hellobravio.com</a></li>
+                        </ul>
+                        <p style={{ ...pStyle, marginTop: '32px', fontSize: '14px' }}>Last Updated: February 24, 2026</p>
+                    </div>
+
                 </div>
             </div>
             <Footer />
