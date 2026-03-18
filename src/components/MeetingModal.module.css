@@ -1,0 +1,189 @@
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+
+  /* Fade in */
+  animation: fadeIn 0.35s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal card */
+.modal {
+  position: relative;
+  background: var(--surface);
+  border-radius: 18px;
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.10),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+  pointer-events: all;
+
+  /* Slide up */
+  animation: slideUp 0.4s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Accent strip at the top */
+.topBar {
+  height: 3px;
+  background: var(--accent);
+  width: 100%;
+}
+
+/* Body padding */
+.body {
+  padding: 22px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+/* Calendar icon wrapper */
+.iconWrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--surface-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+/* "Free 30-minute call" */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+/* Main heading */
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--foreground);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+/* Sub-text */
+.sub {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+/* CTA button */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  background: var(--foreground);
+  color: var(--surface);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.18s ease, transform 0.1s ease;
+  margin-bottom: 12px;
+}
+
+.cta:hover {
+  opacity: 0.88;
+}
+
+.cta:active {
+  transform: scale(0.98);
+}
+
+/* Skip link */
+.skip {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: -0.01em;
+  align-self: center;
+  transition: color 0.15s ease;
+}
+
+.skip:hover {
+  color: var(--foreground);
+}
+
+/* Close (×) button */
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-secondary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.close:hover {
+  background: var(--foreground);
+  color: var(--surface);
+}
+
+/* Mobile – full-width bottom sheet on small screens */
+@media (max-width: 480px) {
+  .overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal {
+    max-width: 100%;
+    border-radius: 18px 18px 0 0;
+  }
+}

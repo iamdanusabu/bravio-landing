@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import MeetingModal from "@/components/MeetingModal";
 
 const font = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] });
 
@@ -92,6 +93,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={font.className}>
         {children}
+        <MeetingModal />
         <Script id="tawk-to" strategy="lazyOnload">
           {`
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
