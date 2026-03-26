@@ -127,6 +127,19 @@ export default function Hero() {
                             {currentOption.subheadline}
                         </p>
 
+                        <div className={styles.g2Badge}>
+                            <div className={styles.stars}>
+                                {[...Array(5)].map((_, i) => (
+                                    <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFB22B" stroke="#FFB22B" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                ))}
+                            </div>
+                            <span className={styles.g2Text}>
+                                <strong>5.0</strong> on <strong>G2</strong>
+                            </span>
+                        </div>
+
                         <div className={styles.ctaRow}>
                             <Link href="https://cal.com/bravio-demo/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">{currentOption.ctaPrimary}</Link>
                             <button className="btn" style={{ border: '1px solid #ddd' }}>{currentOption.ctaSecondary}</button>

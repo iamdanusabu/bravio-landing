@@ -80,8 +80,31 @@
     font-size: 17px;
     color: var(--muted);
     max-width: 480px;
-    margin: 0 0 36px;
+    margin: 0 0 24px;
     line-height: 1.6;
+}
+
+.g2Badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    background: rgba(255, 178, 43, 0.08);
+    border: 1px solid rgba(255, 178, 43, 0.2);
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.g2Text {
+    color: var(--foreground);
+    opacity: 0.9;
 }
 
 .ctaRow {
@@ -188,7 +211,11 @@
 
     .subheadline {
         max-width: 100%;
-        margin: 0 auto 36px;
+        margin: 0 auto 24px;
+    }
+
+    .g2Badge {
+        margin: 0 auto 32px;
     }
 
     .ctaRow {
